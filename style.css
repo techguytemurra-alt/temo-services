@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111;
+  color: #eee;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.logo-link {
+  text-decoration: none; /* წაშლის ქვევით ხაზს */
+  color: #eee;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.logo-link:hover h1 {
+  color: #f39c12; /* ჰოვერზე ფერი შეიცვლება */
+}
+
+.services {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item {
+  flex: 1 1 30%;
+  padding: 25px;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-item:hover {
+  background: #333;
+  transform: translateY(-4px);
+}
+
+.service-detail {
+  display: none;
+  max-width: 900px;
+  margin: 15px auto 30px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 80px;
+}
